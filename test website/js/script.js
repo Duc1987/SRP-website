@@ -1,5 +1,5 @@
-//$(document).ready(function() {
-//   $('img').click(function() {
-//       $(this).hide('slow');
-//   }); 
-//});
+$(document).ready(function(){
+	$('#logo').hover(function(){
+		$(this).fadeOut('slow');
+	});
+});
