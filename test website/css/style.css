@@ -20,6 +20,7 @@ h1 {
 	font-size: 180%;
 	color: #F7008C;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
 	font-size: 180%;
 	color: #F7008C;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 p {
@@ -68,7 +70,7 @@ header a {
 }
 
 #logo {
-	margin: 20px;
+	margin-left: 20px;
 	float: left;
 	width: 200px;
 	height: 60px;
@@ -81,10 +83,14 @@ nav {
 }
 
 #menu-icon {
-	display: hidden;
+	display: none;
 	width: 40px;
 	height: 40px;
-	background-image: url("http://cdn.flaticon.com/png/256/356.png");
+	background: url(img/menu.png) center;
+}
+
+a:hover#menu-icon{
+	border-radius: 4px 4px 0 0;
 }
 
 nav ul li{
@@ -173,10 +179,10 @@ ul.social li img {
 	}
 
 	nav ul, nav:active ul {
-		display: none;
+		
 		position: absolute;
 		padding: 20px;
-		background: grey;
+		background: black;
 		border: 1px solid #fff;
 		right: 20px;
 		top: 60px;
