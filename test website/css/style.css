@@ -80,6 +80,13 @@ nav {
 	padding: 35px 20px 20px 0;
 }
 
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background-image: url("http://cdn.flaticon.com/png/256/356.png");
+}
+
 nav ul li{
 	display: inline-block;
 	float: left;
@@ -136,3 +143,78 @@ footer {
 footer p {
 	color: white;
 }
+
+ul.social li {
+	display: inline;
+}
+
+ul.social li img {
+	height: 30px;
+	margin-right: 10px
+}
+
+/*------Media screen ---*/
+
+@media screen and (max-width: 478px) { 
+
+	body{
+		position: absolute;			
+	}
+}
+
+@media screen and (max-width: 740px){
+
+	header {
+		position: absolute;
+	}
+
+	#menu-icon {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: grey;
+		border: 1px solid #fff;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 2px 0 2px 2px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;		
+	}
+
+	nav:hover li {
+		display: block;
+	}
+
+	section {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	article {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	aside {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+	
