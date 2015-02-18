@@ -50,8 +50,9 @@ a {
 }
 
 a:hover {
-	color: purple;
-	text-decoration: underline;
+	color: #F7008C;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 header {
@@ -80,28 +81,31 @@ header a {
 
 nav {
 	float: right;
-	padding: 35px 20px 20px 0;
-}
-
-#menu-icon {
-	display: none;
-	width: 40px;
-	height: 40px;
-	background: url(img/menu.png) center;
-}
-
-a:hover#menu-icon{
-	border-radius: 4px 4px 0 0;
+	
 }
 
 nav ul li{
 	display: inline-block;
 	float: left;
-	padding: 10px;
+	padding: 20px;
+}
+
+nav ul li:hover{
+	background-color: #111111;
 }
 
 ul {
 	list-style: none;
+}
+
+.handle {
+	width: 100%;
+	background: black;
+	box-sizing: border-box; 
+	color: white;
+	padding: 15px 10px;
+	display: none;
+	cursor: pointer;
 }
 
 #doc {
@@ -186,9 +190,37 @@ ul.social li img {
 
 @media screen and (max-width: 478px) { 
 
-	body{
-		position: absolute;			
+	header {
+		display: block;
+		margin-bottom: 50px;
 	}
+
+
+
+nav ul li {
+		box-sizing: border-box;
+		padding: 15px;
+		background: black;
+		width: 100%;
+		
+	}
+
+/*
+	nav ul {
+		max-height: 0;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		padding: 15px;
+		background: black;
+		width: 100%;
+	}
+
+	.handle {
+	display: block;
+	}
+*/
 }
 
 @media screen and (max-width: 740px){
@@ -197,10 +229,8 @@ ul.social li img {
 		position: absolute;
 	}
 
-	#menu-icon {
-		display: inline-block;
-	}
 
+/*
 	nav ul, nav:active ul {
 		
 		position: absolute;
@@ -222,7 +252,8 @@ ul.social li img {
 
 	nav:hover li {
 		display: block;
-	}
+	} */
+
 
 	section {
 		float: left;
