@@ -7,4 +7,10 @@ $(document).ready(function(){
 	}, function(){
 		$(this).stop().animate({opacity: 0.5}, 'slow')
 		});
-	});
+
+	$("section p").hover(function(){
+        $(this).addClass('active');
+    },function(){
+        $(this).removeClass('active', 'slow');
+    });
+});

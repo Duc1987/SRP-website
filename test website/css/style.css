@@ -21,6 +21,7 @@ h1 {
 	color: #F7008C;
 	font-weight: bold;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 h2 {
@@ -112,7 +113,29 @@ ul {
 	max-width: 100%;
 }
 
+#header img {
+	width: 100%;
+}
+
 section {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+
+section p {
+	border-radius: 5px;
+    background-color: #F9F9F9;
+    padding:20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+.active {
+    background-color:#EFEFEF;
+}
+
+.contact, .media, .over {
 	width: 29%;
 	float: left;
 	margin: 2% 2%;
@@ -202,6 +225,13 @@ ul.social li img {
 	}
 
 	section {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.contact, .media, .over {
 		float: left;
 		width: 100%;
 		margin: 0;
