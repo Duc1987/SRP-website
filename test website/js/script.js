@@ -13,4 +13,15 @@ $(document).ready(function(){
     },function(){
         $(this).removeClass('active', 'slow');
     });
+
+	$('span.nav-btn').click(function(){
+		$('nav > ul').slideToggle();
+	});
+
+	$(window).resize(function(){
+		if( $(window).width() > 600){
+			$('nav > ul').removeAttr('style');
+		}
+	});
+
 });
